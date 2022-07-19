@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            width: 300px;
+            height: 300px;
+            /* Transform - rotate, scale, skew */
+            /* transform: rotate(0deg); */
+            /* transform: skew(120deg); */
+            /* scale의 배수는 크기 */
+            /* transform: scale(2); */
+            transition: all 1s ease-in-out;
+            transform-origin: 0 0;
+        }
+
+        .box:hover {
+            /* transform: rotate(180deg); */
+            /* transform: skew(25deg) scale(1.5); */
+
+            border-radius: 20%;
+            background-color: blue;
+            /* translate x는 가로이동 y는 세로이동 */
+            /* transform: translateY(200px); */
+            /* -는 왼쪽 양수는 오른쪽 */
+            /* transform: translateX(-100px); */
+            /* x & y */
+            /* transform: translate(100px, 100px); */
+            /* transform: translate(100px, 100px) scale(1.5) rotate(45deg); */
+            transform: rotate(45deg) scale(0.5);
+
+            /* transform: translate3d(100px, 100px, 100px); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>
